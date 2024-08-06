@@ -1,0 +1,31 @@
+
+node_modules
+
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing directories
+/coverage
+
+# Production build directory
+/build
+
+# Cache and logs
+/.cache
+/logs
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories
+/.vscode
+/.idea
+
+# OS generated files
+.DS_Store
+Thumbs.db
