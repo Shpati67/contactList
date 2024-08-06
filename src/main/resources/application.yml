@@ -1,0 +1,35 @@
+#spring.application.name=contactapi
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: Shg120010
+#    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLInnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    generate-ddl: true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  mvc:
+    async:
+      request-timeout: 3600000
+server:
+  port: 8080
+  error:
+    path: /user/error
+    whitelabel:
+      enabled: false
+jwt:
+  secret: "jH6jx5fhohfOKbtI1qH8aq313awLaQR2Ryhalb6mjoTiga8tAEqBoLTwRwDncoVQoXwiuRmEOVz5sLVV9vzurWY5NQ9sjZCmX4SHXZZ6vVaLz/dwaiG84XQFRRwWZxmi4H4TZawx1Vi8aVosATd9DaXl3fusddnym3LpExspWyW8MFUFEHgadwrErHqEkey5jk5bZ8MKKbAfh5r2M2iEb8pBAOrteDMjwZidgHChuYsa8jDJ/106qOTQATvPl5eXwvZuC5uAuHCUE7IK0kxe2M40q2WQEVSxBOtxvnkX97oV1b4/TleTIL3drG2TdAGRRC2G1D7MhD2rEh6YbI+/ElsyqdjQ9P83fu/+7zwhcyE=\n"
